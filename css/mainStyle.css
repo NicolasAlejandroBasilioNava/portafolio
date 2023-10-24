@@ -1,0 +1,143 @@
+:root {
+  --darkmatter: #34495e;
+  --darkermatter: #2c3e50;
+  --greenapple: #2ecc71;
+  --greyapple: #ecf0f1;
+}
+
+.inicio{
+  height: 35vh;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+
+.image-container {
+  height: 90%;
+  /* width: 90%; */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra con los valores que desees */
+  &:hover{
+    border: 2px solid var(--greenapple);
+  }
+}
+
+
+.inicio-info{
+  text-align: right;
+}
+
+.inicio-info-buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.inicio-info-buttons-style{
+  min-height: 2.5rem;
+  min-width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: var(--darkmatter);
+  &:hover{
+    transform: scale(1.2,1.2);
+  }
+}
+
+.sobre-mi{
+  height: 40vh;
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.sobre-mi-text{
+  width: 80%;
+  padding: 2%;
+  /* border-radius: 20px; */
+  background-color: var(--darkmatter);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra con los valores que desees */
+  &:hover{
+    border: 2px solid var(--greenapple);
+  }
+}
+
+.sobre-mi-text p{
+  font-size: larger;
+  margin-top: 2%;
+}
+
+.sobre-mi-image-container{
+  width: 30%;
+  border-radius: 20px;
+  margin-left: 5rem;
+}
+
+.proyectos{
+  margin-top: 4%;
+  height: 40vh;
+  padding: 2%;
+  background-color: var(--darkmatter);
+}
+
+.habilidades {
+  height: 25vh;
+  padding: 2%;
+  /* text-align: center; */
+  overflow: hidden; /* Oculta el contenido que desborda */
+  position: relative; /* Agrega posición relativa para el desplazamiento */
+  width: 100%; /* Ajusta el ancho según el número de tarjetas */
+}
+
+#carousel {
+  display: flex;
+  animation: moveCarousel 7s linear infinite; 
+  width: 200%; 
+  position: absolute; 
+  transition: left 1s; 
+  left: 0; 
+
+}
+
+.card {
+  display: flex;
+  min-width: 200px;
+  height: 100px;
+  background-color: var(--darkmatter);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  line-height: 100px;
+  gap: 5%;
+  /* flex-flow: column wrap; */
+  &:hover{
+    border: 2px solid var(--greenapple);
+  }
+}
+
+.card img{
+  height: 90%;
+}
+
+@keyframes moveCarousel {
+  0% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateX(-20%); /* Ajusta el porcentaje según el número de tarjetas */
+  }
+  100%{
+    transform: translateX(5%);
+  }
+}
+
+
+
