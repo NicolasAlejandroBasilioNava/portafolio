@@ -12,24 +12,24 @@
       <nav class="nav">
         <div class="content">
           <div class="links nav-items">
-            <a>Inicio</a>
-            <a>Sobre mi</a>
-            <a>Proyectos</a>
-            <a href="">Habilidades</a>
+            <a href="#INICIO">Inicio</a>
+            <a href="#SOBREMI">Sobre mi</a>
+            <a href="#PROYECTOS">Proyectos</a>
+            <a href="#HABILIDADES">Habilidades</a>
           </div>
           <i class="material-icons menu" onclick="menu()">menu</i>
         </div>
         <div class="dropdown" id="dropdown">
-          <a href="">Inicio</a>
-          <a href="">Sobre mi</a>
-          <a href="">Proyectos</a>
-          <a href="">Habilidades</a>
+          <a href="#INICIO">Inicio</a>
+          <a href="#SOBREMI">Sobre mi</a>
+          <a href="#PROYECTOS">Proyectos</a>
+          <a href="#HABILIDADES">Habilidades</a>
         </div>
       </nav>
     </header>
 
     <main class="main-page">
-      <div class="inicio">    
+      <div class="inicio" id="INICIO">    
         <img loading="lazy" class="image-container" src="https://media.licdn.com/dms/image/D4D03AQG2VlLa4DuZ5g/profile-displayphoto-shrink_800_800/0/1675439263328?e=1703721600&v=beta&t=kEs9yM1WDfg9AKgbAN12QYOn3oBykZ6g0ZQJ6X1CD88" alt="imagen">
         <div class="inicio-info">
           <h2>Nicolás Alejandro Basilio Nava</h2>
@@ -37,11 +37,11 @@
           <h3>Ingeniero de Software</h3>
           <div class="inicio-info-buttons">
             <a class="inicio-info-buttons-style">Descargar CV</a>
-            <a class="inicio-info-buttons-style">Contacto</a>
+            <a class="inicio-info-buttons-style" href="#FOOTER">Contacto</a>
           </div>
         </div>
       </div>
-      <div class="sobre-mi">
+      <div class="sobre-mi" id="SOBREMI">
         <section class="sobre-mi-text">
           <h1>Sobre mi</h1>
           <p>Soy un estudiante de Ingeniería en Sistemas Computacionales con énfasis en 
@@ -56,14 +56,32 @@
         </section>
           <img loading="lazy" class="sobre-mi-image-container" src="https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen">
       </div>
-      <div class="proyectos">
+      <div class="proyectos" id="PROYECTOS">
         <h1>Proyectos</h1>
         <section>Cards con scroll de ser necesario</section>
       </div>
-      <div class="habilidades">
+      <div class="habilidades" id="HABILIDADES">
         <h1>Habilidades</h1>
         <section id="carousel">
-          <!-- Tarjetas de habilidades -->
+          <div class="card">
+            <!-- Tarjetas de habilidades -->
+            <img loading="lazy" src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/django-1.png" alt="">
+            <h5>
+              django
+            </h5>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" alt="">
+            <h5>
+              Laravel
+            </h5>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="./assets/img/react-native-logo.png" alt="">
+            <h5>
+              Reac Native
+            </h5>
+          </div>
           <div class="card">
             <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="">
             <h5>HTML</h5>
@@ -87,7 +105,7 @@
             </h5>
           </div>
           <div class="card">
-            <img loading="lazy" src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" alt="">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/935px-Python-logo-notext.svg.png" alt="">
             <h5>
               Python
             </h5>
@@ -98,24 +116,6 @@
               SQL
             </h5>
           </div>
-          <div class="card">
-            <img loading="lazy" src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/django-1.png" alt="">
-            <h5>
-              django
-            </h5>
-          </div>
-          <div class="card">
-            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" alt="">
-            <h5>
-              Laravel
-            </h5>
-          </div>
-          <div class="card">
-            <img loading="lazy" src="https://raw.githubusercontent.com/kristerkari/react-native-svg-transformer/HEAD/images/react-native-logo.png" alt="">
-            <h5>
-              Reac Native
-            </h5>
-          </div>
           
         </section>
       </div>
@@ -124,7 +124,7 @@
     </main>
 
     <footer>
-      <div class="footer">
+      <div class="footer" id="FOOTER">
         <div class="heading">
           <h2>Contact</h2>
         </div>
@@ -143,17 +143,17 @@
               >
             </p>
             <p>
-              <a href="https://github.com/farazc60"
+              <a href="https://github.com/NicolasAlejandroBasilioNava"
                 ><i class="fab fa-github"></i> Github</a
               >
             </p>
           </div>
           <div class="links">
             <h4>Enlace rápido</h4>
-            <p><a href="#">Inicio</a></p>
-            <p><a href="#">Sobre mi</a></p>
-            <p><a href="#">Proyectos</a></p>
-            <p><a href="#">Habilidades</a></p>
+            <p><a href="#INICIO">Inicio</a></p>
+            <p><a href="#SOBREMI">Sobre mi</a></p>
+            <p><a href="#PROYECTOS">Proyectos</a></p>
+            <p><a href="#HABILIDADES">Habilidades</a></p>
           </div>
           <div class="details">
             <h4 class="mail">Correo</h4>

@@ -5,20 +5,23 @@
   --greyapple: #ecf0f1;
 }
 
+
+
 .inicio{
-  height: 35vh;
+  min-height: 35vh;
   display: flex;
-  flex-flow: row, nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 15%;
 }
 
 .image-container {
-  height: 90%;
+  height: 45vh;
   /* width: 90%; */
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
+  object-fit: cover;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra con los valores que desees */
   &:hover{
     border: 2px solid var(--greenapple);
@@ -50,7 +53,7 @@
 }
 
 .sobre-mi{
-  height: 40vh;
+  min-height: 40vh;
   display: flex;
   margin-top: 1rem;
   width: 100%;
@@ -58,6 +61,7 @@
 
 .sobre-mi-text{
   width: 80%;
+  height: fit-content;
   padding: 2%;
   /* border-radius: 20px; */
   background-color: var(--darkmatter);
@@ -139,5 +143,46 @@
   }
 }
 
+/* Estilos para pantallas con un ancho menor o igual a 500px */
+@media (max-width: 500px) {
+  @keyframes moveCarousel {
+    0% {
+      transform: translateX(1%);
+    }
+    50% {
+      transform: translateX(-200%); /* Ajusta el porcentaje según el número de tarjetas */
+    }
+    100%{
+      transform: translateX(1%);
+    }
+  }
+}
 
+/* Estilos para pantallas con un ancho menor o igual a 900px */
+@media (max-width: 900px) {
+  .image-container{
+    height: 30vh;
+  }
+
+  .sobre-mi-text {
+    width: 100%;
+
+  }
+
+  .sobre-mi-image-container {
+    display: none;
+  }
+
+  @keyframes moveCarousel {
+    0% {
+      transform: translateX(1%);
+    }
+    50% {
+      transform: translateX(-100%); /* Ajusta el porcentaje según el número de tarjetas */
+    }
+    100%{
+      transform: translateX(1%);
+    }
+  }
+}
 

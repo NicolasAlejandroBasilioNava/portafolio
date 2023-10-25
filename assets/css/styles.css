@@ -1,3 +1,15 @@
 @import url('navBarStyle.css');
 @import url('mainStyle.css');
 @import url('footerStyle.css');
+
+main{
+  padding-top: 7vh;
+}
+
+div[id]{
+  scroll-margin-top: 7vh;
+}
+
+html{
+  scroll-behavior: smooth;
+}

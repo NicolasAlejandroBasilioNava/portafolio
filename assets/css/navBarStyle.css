@@ -38,6 +38,9 @@ a {
 
 
 nav {
+  position: fixed;
+  width: 100%;
+  height: 7vh;
   display: grid;
   grid-template-rows: minmax(min-content, 60px);
   .content {
