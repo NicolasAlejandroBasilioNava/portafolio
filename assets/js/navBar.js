@@ -73,12 +73,54 @@ document.addEventListener("click", function(event) {
   }
 });
 
-// const carousel = document.getElementById("carousel");
 
-// function moveCarousel() {
-//   const firstCard = carousel.querySelector(".card");
-//   carousel.appendChild(firstCard);
+// const images = document.querySelectorAll('.proyecto-card-imgs');
+// const fullImageContainer = document.querySelector('.proyecto-card-image-full');
+// const fullImage = document.getElementById('fullscreen-image');
+
+// let currentImageIndex = 0;
+
+// function showImage(index) {
+//   images.forEach((img, i) => {
+//     if (i === index) {
+//       img.classList.add('active');
+//       img.classList.remove('inactive');
+//     } else {
+//       img.classList.add('inactive');
+//       img.classList.remove('active');
+//     }
+//   });
 // }
 
-// // Configura un intervalo para mover el carrusel automáticamente
-// setInterval(moveCarousel, 5000); // Cambia el valor (en milisegundos) según la velocidad que desees
+// function openFullscreen(index) {
+//   fullImage.src = images[index].src;
+//   fullImageContainer.style.display = 'flex';
+// }
+
+// function closeFullscreen() {
+//   fullImageContainer.style.display = 'none';
+// }
+
+// showImage(currentImageIndex);
+
+// images.forEach((img, index) => {
+//   img.addEventListener('click', () => {
+//     currentImageIndex = index;
+//     openFullscreen(index);
+//   });
+// });
+
+// document.addEventListener('keydown', (event) => {
+//   if (event.key === 'ArrowLeft') {
+//     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+//   } else if (event.key === 'ArrowRight') {
+//     currentImageIndex = (currentImageIndex + 1) % images.length;
+//   } else if (event.key === 'Escape') {
+//     closeFullscreen();
+//   }
+//   showImage(currentImageIndex);
+// });
+
+// fullImageContainer.addEventListener('click', () => {
+//   closeFullscreen();
+// });

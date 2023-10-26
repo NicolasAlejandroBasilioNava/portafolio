@@ -3,6 +3,7 @@
   --darkermatter: #2c3e50;
   --greenapple: #2ecc71;
   --greyapple: #ecf0f1;
+  --red: #971717;
 }
 
 
@@ -61,7 +62,7 @@
 
 .sobre-mi-text{
   width: 80%;
-  height: fit-content;
+  min-height: 40vh;
   padding: 2%;
   /* border-radius: 20px; */
   background-color: var(--darkmatter);
@@ -82,12 +83,95 @@
   margin-left: 5rem;
 }
 
+.hashtags-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 4vh;
+  gap: 1rem;
+}
+
+.hashtags{
+  color: var(--greyapple);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 0.5rem;
+  margin-bottom: 4vh;
+  &:hover{
+    color: var(--greenapple);
+    cursor: pointer;
+  }
+}
+
 .proyectos{
   margin-top: 4%;
-  height: 40vh;
+  min-height: 60vh;
   padding: 2%;
   background-color: var(--darkmatter);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+.proyectos-container{
+  display: flex;
+  gap: 2rem;
+}
+
+
+
+.proyectos-skills{
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 20%;
+  gap: 5%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-skill{
+  width: fit-content;
+  min-height: 7vh;
+  align-content: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.card-skill img{
+  height: 7vh;
+  object-fit: cover;
+  overflow: hidden;
+  align-self: center;
+}
+
+.proyecto-card-carousel {
+  display: flex;
+  overflow: scroll;
+  /* position: relative; */
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.proyecto-card-imgs {
+  width: 100%;
+  height: 50vh;
+  scroll-snap-align: start;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.proyecto-card {
+  margin: 0 auto;
+  width: 90%; /* Ajusta el ancho según tu diseño */
+  overflow: hidden; /* Oculta las imágenes adicionales */
+}
+
+.proyecto-card img {
+  display: block;
+}
+
+
 
 .habilidades {
   height: 25vh;
