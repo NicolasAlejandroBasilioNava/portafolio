@@ -114,6 +114,7 @@
 .proyectos-container{
   display: flex;
   gap: 2rem;
+  flex-flow: column wrap;
 }
 
 
@@ -150,6 +151,7 @@
   scroll-snap-type: x mandatory;
   white-space: nowrap;
   scroll-behavior: smooth;
+  gap: 2%;
 }
 
 .proyecto-card-imgs {
@@ -159,11 +161,13 @@
   display: inline-block;
   vertical-align: top;
   white-space: normal;
+  /* margin-right: 2%; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .proyecto-card {
   margin: 0 auto;
-  width: 90%; /* Ajusta el ancho según tu diseño */
+  width: 100%; /* Ajusta el ancho según tu diseño */
   overflow: hidden; /* Oculta las imágenes adicionales */
 }
 
